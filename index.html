@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+		<title>Tic Tac Toe</title>
+		<style>
+			* {
+				font-family: 'Segoe UI Light';
+			}
+
+			html,
+			body {
+				margin: 0;
+			}
+
+			.container {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			table {
+				border: 1px solid black;
+				border-collapse: collapse;
+				width: 600px;
+				height: 600px;
+			}
+
+			td {
+				border: 1px solid black;
+				text-align: center;
+				width: 200px;
+				height: 200px;
+				font-size: 50px;
+				transition: background-color, 0.7s;
+			}
+
+			#result {
+				text-align: center;
+				display: none;
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div style="font-size: 30px">TIC TAC TOE</div>
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<div id="result"></div>
+		</div>
+
+		<script src="tictactoe.js"></script>
+	</body>
+</html>
