@@ -1,5 +1,4 @@
 # Tic Tac Toe
 
-This is very simple tic tac toe game.  
-I haven't make an AI yet.  
-I think I will make soon.
+단순한 Tic Tac Toe 게임입니다.  
+아직 인공지능은 만들지 않았습니다.
