@@ -15,11 +15,13 @@ function check() {
 		if (board[i].every((value) => board[i][0] === value && value)) {
 			highlightIndexes = [i3, i3 + 1, i3 + 2];
 			gameOver(board[i][0]);
+			return;
 		}
 
 		if (board[0][i] === board[1][i] && board[1][i] === board[2][i] && board[0][i]) {
 			highlightIndexes = [i, i + 3, i + 6];
 			gameOver(board[0][i]);
+			return;
 		}
 	}
 
@@ -27,9 +29,11 @@ function check() {
 	if (board[0][0] === board[1][1] && board[1][1] === board[2][2] && board[0][0]) {
 		highlightIndexes = [0, 4, 8];
 		gameOver(board[0][0]);
+		return;
 	} else if (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[0][2]) {
 		highlightIndexes = [2, 4, 6];
 		gameOver(board[0][2]);
+		return;
 	}
 
 	// 무승부 확인
