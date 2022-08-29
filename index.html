@@ -24,52 +24,16 @@
 				flex-direction: column;
 			}
 
-			table {
-				border: 1px solid black;
-				border-collapse: collapse;
-				width: 600px;
-				height: 600px;
-			}
-
-			td {
-				border: 1px solid black;
-				text-align: center;
-				width: 200px;
-				height: 200px;
-				font-size: 70px;
-				transition: background-color 0.7s;
-			}
-
-			#result {
-				text-align: center;
-				display: none;
-				font-size: 40px;
+			button {
+				margin-bottom: 10px;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div style="font-size: 30px">TIC TAC TOE</div>
-			<table>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-			<div id="result"></div>
+			<h1>TIC TAC TOE</h1>
+			<button onclick="location.href = '/game.html'">Play with friend</button><br />
+			<button onclick="location.href = '/game.html?ai=true'">Play with AI</button>
 		</div>
-
-		<script src="tictactoe.js"></script>
 	</body>
 </html>
