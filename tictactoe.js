@@ -77,20 +77,22 @@ function gameOver(p) {
 	}, 1500);
 }
 
-for (let i = 0; i < 3; i++) {
-	for (let j = 0; j < 3; j++) {
-		let idx = i * 3 + j;
-		tds[idx].addEventListener('click', () => {
-			if (!board[i][j]) {
-				let is1 = currentPlayer === 1;
+window.onload = () => {
+	for (let i = 0; i < 3; i++) {
+		for (let j = 0; j < 3; j++) {
+			let idx = i * 3 + j;
+			tds[idx].addEventListener('click', () => {
+				if (!board[i][j]) {
+					let is1 = currentPlayer === 1;
 
-				board[i][j] = currentPlayer;
-				tds[idx].innerHTML = is1 ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-o"></i>';
+					board[i][j] = currentPlayer;
+					tds[idx].innerHTML = is1 ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-o"></i>';
 
-				check();
+					check();
 
-				currentPlayer = is1 ? 2 : 1;
-			}
-		});
+					currentPlayer = is1 ? 2 : 1;
+				}
+			});
+		}
 	}
-}
+};
