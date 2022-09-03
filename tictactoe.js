@@ -166,6 +166,7 @@ function gameOver(p) {
 }
 
 window.onload = () => {
+	// td 요소에 클릭 이벤트 추가
 	for (let i = 0; i < 3; i++) {
 		for (let j = 0; j < 3; j++) {
 			let idx = i * 3 + j;
